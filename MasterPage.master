@@ -1,0 +1,33 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css"/>
+    <title>SportsPro</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="cont">
+   
+    <div class="navbar">
+        <a href="/Default.aspx">SportPro</a>
+        <a href="/Default.aspx">Home</a>
+        <a href="/webpages/products/Products.aspx">Products</a>
+        <a href="/webpages/technicians/Technicians.aspx">Technicians</a>
+        <a href="/webpages/customers/Customers.aspx">Customers</a>
+        <a href="/webpages/incidents/Incidents.aspx">Incidents</a>
+        <a href="#">Registrations</a>
+        <a href="#">About</a>
+    </div>
+     <div class="main">
+        <asp:ContentPlaceHolder id="MainContent1" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+    </div>
+    
+</div>
+</body>
+</html>
