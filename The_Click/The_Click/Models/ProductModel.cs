@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace The_Click.Models
 {
@@ -10,7 +10,7 @@ namespace The_Click.Models
         public string Code { get; set; }
         public string Name { get; set; }
         public string Price { get; set; }
-       // [DataType(DataType.Date)]//
+       [DataType(DataType.Date)]
        public DateTime ReleaseDate { get; set; }
 
        
